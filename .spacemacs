@@ -258,6 +258,11 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (global-company-mode)
   (add-hook 'python-mode 'anaconda-mode)
+
+  ;; company backends for clang configuration
+  ;;(setq company-backends (delete 'company-semantic company-backends))
+  ;;(define-key c-mode-map [(tab)] 'company-complete)
+  ;;(define-key c++-mode-map [(tab)] 'company-complete)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
